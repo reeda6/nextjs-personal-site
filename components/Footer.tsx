@@ -6,7 +6,7 @@ import Text from './Text';
 import React from 'react';
 import { SiGithub, SiLinkedin, SiTwitter } from 'react-icons/si';
 import { MdMail } from 'react-icons/md';
-import { Malt, Instagram } from '@icons';
+import { Instagram } from '@icons';
 
 const StyledFooter = styled.footer`
   width: 100%;
@@ -22,7 +22,7 @@ const StyledFooter = styled.footer`
 
 const FooterGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 30px;
   margin-bottom: 30px;
   margin-top: 20px;
@@ -33,27 +33,23 @@ const Footer = (): JSX.Element => {
   const links = React.useMemo(
     () => [
       {
-        url: 'https://github.com/shellbear',
+        url: 'https://github.com/reeda6',
         icon: SiGithub,
       },
       {
-        url: 'https://twitter.com/_shellbear',
+        url: 'https://twitter.com/alexjreed7',
         icon: SiTwitter,
       },
       {
-        url: 'mailto:hello@shellbear.me',
+        url: 'mailto:alexjreed7@gmail.com',
         icon: MdMail,
       },
       {
-        url: 'https://malt.fr/profile/antoineordonez',
-        icon: Malt,
-      },
-      {
-        url: 'https://linkedin.com/in/antoine-ordonez',
+        url: 'https://www.linkedin.com/in/alexander-reed19/',
         icon: SiLinkedin,
       },
       {
-        url: 'https://instagram.com/croissant2france',
+        url: 'https://instagram.com/alexjreed7',
         icon: Instagram,
       },
     ],
@@ -62,11 +58,11 @@ const Footer = (): JSX.Element => {
 
   return (
     <StyledFooter>
-      <Container paddingY="25px">
+      <Container padding-top="5px" paddingY="25px">
         <Grid gridGap="30px">
           <Link href="/">Home</Link>
           <Link href="/about">About</Link>
-          <Link href="/projects">Projects</Link>
+          {/* <Link href="/projects">Projects</Link> */}
           <Link href="mailto:hello@shellbear.me">Contact</Link>
         </Grid>
       </Container>
@@ -78,7 +74,7 @@ const Footer = (): JSX.Element => {
         ))}
       </FooterGrid>
       <Text margin={0} fontSize="0.9rem" color="rgba(0, 0, 0, 0.7)">
-        © {new Date().getFullYear()} Antoine Ordonez
+        © {new Date().getFullYear()} Alex Reed
       </Text>
     </StyledFooter>
   );

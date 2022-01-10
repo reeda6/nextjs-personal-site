@@ -18,21 +18,14 @@ const Blog: NextPage<BlogProps> = ({ pages }) => {
   return (
     <Container maxWidth={1200}>
       <Head>
-        <title>Blog - Antoine Ordonez</title>
-        <meta property="og:title" content="Blog – Antoine Ordonez" />
+        <title>Blog - Alex Reed</title>
+        <meta property="og:title" content="Blog – Alex Reed" />
       </Head>
       <Container mb="3rem">
         <Title>Blog</Title>
-        <Text textAlign="center">
-          Posts about code, projects and various other things. <br />
-          An RSS feed is available at this{' '}
-          <a target="_blank" href="/blog/feed.xml">
-            link
-          </a>
-          .
-        </Text>
+        <Text textAlign="center">A work in progress... stay tuned!</Text>
       </Container>
-      <Grid gridTemplateColumns={['1fr', '1fr 1fr']} gridGap={['3rem', '2rem']}>
+      {/* <Grid gridTemplateColumns={['1fr', '1fr 1fr']} gridGap={['3rem', '2rem']}>
         {pages.map(({ title, uri, date, cover }, i) => (
           <Link key={i} href={uri}>
             <Card padding={[0]} margin={[0]}>
@@ -69,7 +62,7 @@ const Blog: NextPage<BlogProps> = ({ pages }) => {
             </Card>
           </Link>
         ))}
-      </Grid>
+      </Grid> */}
     </Container>
   );
 };

@@ -19,28 +19,28 @@ const Home = (): JSX.Element => (
       <Container alignItems="center" alignContent="center">
         <Image
           src="/me.jpg"
-          alt="Antoine Ordonez"
+          alt="Alex Reed"
           width="120px"
           height="120px"
           objectFit="cover"
           className={styles.image}
         />
-        <Title>Antoine Ordonez</Title>
+        <Title>Alex Reed</Title>
         <Title
           fontSize="2rem"
           color="rgba(0, 0, 0, 0.6)"
           fontWeight="500"
           as="h2"
         >
-          I build cloud software.
+          Software enthusiast.
         </Title>
       </Container>
       <Container maxWidth="700px" gridGap="3rem">
         <Container>
           <Text textAlign="center">
-            I&apos;m a Full Stack developer with experience in DevOps, Backend,
-            Frontend and mobile development. Currently CTO of&nbsp;
-            <a href="https://shareview.fr">Shareview</a> and living in Paris.
+            I&apos;m a technologist with experience in distributed systems, web
+            development, machine learning, product management. Currently an
+            engineer at Apple and living as a bit of a nomad.
           </Text>
         </Container>
         <Link href="/about">
@@ -55,8 +55,8 @@ const Home = (): JSX.Element => (
           Get in touch
         </Title>
         <Text textAlign="center">
-          Although I&apos;m not actively looking for job opportunities, my inbox
-          is still open for you. Feel free to ask me anything!
+          I am interested in learning and hearing about new technologies and
+          opportunities. Feel free to reach out if you'd like to chat!
         </Text>
         <Grid
           gridGap="2rem"
@@ -65,7 +65,7 @@ const Home = (): JSX.Element => (
           justifyItems="stretch"
           alignItems="stretch"
         >
-          <Link href="mailto:hello@shellbear.me">
+          <Link href="mailto:alexjreed7@gmail.com">
             <Button width="100%">
               <motion.span
                 initial={{ display: 'inline-block' }}
@@ -81,10 +81,7 @@ const Home = (): JSX.Element => (
               Say hello
             </Button>
           </Link>
-          <Link
-            target="_blank"
-            href="https://calendly.com/antoine-ordonez/intro"
-          >
+          <Link target="_blank" href="https://calendly.com/alexjreed7">
             <Button
               width="100%"
               backgroundColor="rgb(226,232,240)"

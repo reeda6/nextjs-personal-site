@@ -19,12 +19,12 @@ const states: { [key: string]: React.CSSProperties } = {
     left: '157px',
     width: '55px',
   },
-  '/bookmarks': {
-    left: '224px',
-    width: '100px',
-  },
+  // '/bookmarks': {
+  //   left: '224px',
+  //   width: '100px',
+  // },
   '/projects': {
-    left: '340px',
+    left: '224px',
     width: '79px',
   },
 };
@@ -60,7 +60,7 @@ const Links = (): JSX.Element => (
     <NavLink href="/">Home</NavLink>
     <NavLink href="/about">About</NavLink>
     <NavLink href="/blog">Blog</NavLink>
-    <NavLink href="/bookmarks">Bookmarks</NavLink>
+    {/* <NavLink href="/bookmarks">Bookmarks</NavLink> */}
     <NavLink href="/projects">Projects</NavLink>
   </>
 );
@@ -73,6 +73,7 @@ const Nav = ({ isOpen, onOpen, onClose }: NavProps): JSX.Element => {
     for (const path of Object.keys(states).slice(1)) {
       if (router.asPath.startsWith(path)) {
         navStyle = states[path];
+        console.log('hereeee');
         break;
       }
     }
@@ -86,9 +87,10 @@ const Nav = ({ isOpen, onOpen, onClose }: NavProps): JSX.Element => {
       alignContent="center"
       justifyContent={['center', 'center', 'space-between']}
       margin="3rem 0"
+      mx="25px"
     >
       <Container display={['none', 'none', 'flex']}>
-        <NavLink href="/">Antoine Ordonez</NavLink>
+        <NavLink href="/">Alex Reed</NavLink>
       </Container>
       <MenuContainer display={['flex', 'none', 'none']}>
         {isOpen ? (
@@ -115,7 +117,7 @@ const Nav = ({ isOpen, onOpen, onClose }: NavProps): JSX.Element => {
           gridGap="2rem"
           alignItems="center"
           justifyItems="center"
-          gridTemplateColumns="repeat(5, auto)"
+          gridTemplateColumns="repeat(4, auto)"
           style={{
             borderRadius: '25px',
             background: 'rgba(0, 0, 0, 0.04)',
@@ -138,7 +140,7 @@ const Nav = ({ isOpen, onOpen, onClose }: NavProps): JSX.Element => {
         </Grid>
       </Container>
       <Container alignContent="flex-end" display={['none', 'none', 'flex']}>
-        <NavLink href="mailto:hello@shellbear.me">Contact</NavLink>
+        <NavLink href="mailto:alexjreed7@gmail.com">Contact</NavLink>
       </Container>
     </Grid>
   );

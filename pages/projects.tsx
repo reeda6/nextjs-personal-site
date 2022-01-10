@@ -46,12 +46,13 @@ const Projects = ({ projects }: ProjectProps): JSX.Element => (
     <Container alignItems="center">
       <Title>Projects</Title>
       <Text textAlign="center">
-        I&apos;m always working on new projects. <br />
-        You can find them on my&nbsp;
-        <a href="https://github.com/shellbear">Github</a>.
+        Unfortunately, I can not work on personal projects while in my current
+        role at Apple. <br />
+        However, I have a few projects I previously worked in my&nbsp;
+        <a href="https://github.com/reeda6">Github</a>.
       </Text>
     </Container>
-    <Grid
+    {/* <Grid
       py="4rem"
       gridTemplateColumns={['1fr', 'repeat(2, 1fr)']}
       width="100%"
@@ -100,7 +101,7 @@ const Projects = ({ projects }: ProjectProps): JSX.Element => (
           </Container>
         </ProjectContainer>
       ))}
-    </Grid>
+    </Grid> */}
   </Container>
 );
 
