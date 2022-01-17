@@ -1,11 +1,7 @@
-# [shellbear.me](https://shellbear.me/)
+# [alexreed.site](https://alexreed.site/)
 
-Source code of my personal website & blog ✨
+Source code of my personal website & soon to be blog
 
-Check the live version [here](https://shellbear.me/) ⚡️
-
-[![home](./.github/img/home.png)](https://shellbear.me/)
-[![blog](./.github/img/blog.png)](https://shellbear.me/)
 
 ## ✨ Features
 
