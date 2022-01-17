@@ -101,7 +101,7 @@ const Nav = ({ isOpen, onOpen, onClose }: NavProps): JSX.Element => {
           />
         ) : (
           <Menu
-            size="1.6rem"
+            size="25px"
             onClick={(evt) => evt.type === 'click' && onOpen()}
           />
         )}

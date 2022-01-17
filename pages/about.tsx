@@ -102,7 +102,7 @@ const About = ({ experiences }: AboutProps): JSX.Element => {
           {stacks.map(({ Icon, url }, i) => (
             <Link href={url} key={url}>
               <Card key={i}>
-                <Icon size="2rem" />
+                <Icon size="32px" />
               </Card>
             </Link>
           ))}
