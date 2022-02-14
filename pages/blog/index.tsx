@@ -1,17 +1,18 @@
 import Head from 'next/head';
+import styled from 'styled-components';
 import { GetStaticPropsResult, NextPage } from 'next';
 import { NotionAPI } from 'notion-client';
 
 import { getPageInfo, Page, POSTS } from '@posts/notion';
-import { Title, Container, Text } from '@components';
+import { Title, Link, Container, Grid, Card, Image, Text } from '@components';
 
 interface BlogProps {
   pages: Page[];
 }
 
-// const BlogImage = styled(Image)`
-//   border-radius: 5px;
-// `;
+const BlogImage = styled(Image)`
+  border-radius: 5px;
+`;
 
 const Blog: NextPage<BlogProps> = ({ pages }) => {
   return (
@@ -24,7 +25,7 @@ const Blog: NextPage<BlogProps> = ({ pages }) => {
         <Title>Blog</Title>
         <Text textAlign="center">A work in progress... stay tuned!</Text>
       </Container>
-      {/* <Grid gridTemplateColumns={['1fr', '1fr 1fr']} gridGap={['3rem', '2rem']}>
+      <Grid gridTemplateColumns={['1fr', '1fr 1fr']} gridGap={['3rem', '2rem']}>
         {pages.map(({ title, uri, date, cover }, i) => (
           <Link key={i} href={uri}>
             <Card padding={[0]} margin={[0]}>
@@ -61,7 +62,7 @@ const Blog: NextPage<BlogProps> = ({ pages }) => {
             </Card>
           </Link>
         ))}
-      </Grid> */}
+      </Grid>
     </Container>
   );
 };
