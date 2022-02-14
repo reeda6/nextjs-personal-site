@@ -23,7 +23,7 @@ const Blog: NextPage<BlogProps> = ({ pages }) => {
       </Head>
       <Container mb="3rem">
         <Title>Blog</Title>
-        <Text textAlign="center">A work in progress... stay tuned!</Text>
+        <Text textAlign="center">Ideas, projects, opinions, etc.</Text>
       </Container>
       <Grid gridTemplateColumns={['1fr', '1fr 1fr']} gridGap={['3rem', '2rem']}>
         {pages.map(({ title, uri, date, cover }, i) => (
